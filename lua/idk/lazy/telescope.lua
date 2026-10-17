@@ -11,6 +11,13 @@ return {
 					treesitter = false,
 				},
 			},
+			pickers = {
+				buffers = {
+					mappings = {
+						n = { ["dd"] = require("telescope.actions").delete_buffer },
+					},
+				},
+			},
 		})
 
 		local builtin = require("telescope.builtin")
